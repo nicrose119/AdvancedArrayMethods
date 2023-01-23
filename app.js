@@ -157,16 +157,21 @@ function problemOne(){
 let vegetarianFood = problemOne();
 console.log('vegetarianFood from problemOne', vegetarianFood)
 
-
 //2. Create a function that will prompt the user to enter a cuisine type and then return all dishes that match that type
 //Filter
-// function problemTwo(){
+// function getCuisineChoice(dishes){
     
-//     let results = dishes.filter(function(el){
-//         console.log(el)
-       
+//     let cuisineChoice = prompt("Please select your choice of cuisine") 
+//     cuisineChoice = dishes.filter(funtion(el){
+//         if(el.cuisine){
+//             return true;
+//         }
+//         else{
+//             return false;
+//         }
 //     })
-// }
+// } 
+
 
 
 //3. Create a function that will return all dishes with the cuisine type of "Italian" and a serving size greater than 5.
@@ -186,7 +191,16 @@ console.log(italianCuisine);
 //4. Create a function that will return only dishes whose id number matches their serving count.
 //Filter
 
+function getIdMatchingServings(dishes) {
+    if (dishes.id === dishes.servings) {
+        return true;
+    }   else {
+        return false;
+    }
+}
+let idMatchingServings = dishes.filter(getIdMatchingServings);
 
+console.log(idMatchingServings);
 
 //5. Create a function that will return only dishes whose serving count is even.
 //Filter
