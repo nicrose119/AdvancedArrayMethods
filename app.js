@@ -217,13 +217,20 @@ let evenServings = dishes.filter(getEvenServings);
 console.log(evenServings)
 
 
-
 //6. Create a function that will return dishes whose ingredients array INCLUDES "chickpea".
 //Hint: You do not want to check the array's indexes to find out what the array INCLUDES.
 //Double Hint: Research 'javascript does array include item'
 //Filter
+// function getIncludesChickPeas(dishes) {
+//     if (dishes.includes(chickpeas)) {
+//         return true;
+//     }   else {
+//         return false;
+//     }
+// }
+// let includesChickPeas = dishes.includes(chickpeas);
 
-
+// console.log(includesChickPeas)
 
 //7. Create a function that will prompt the user to type the name of one ingredient. Then use a filter to find all the dishes whose ingredients array INCLUDES that ingredient. Return the new array.
 //Filter
