@@ -204,6 +204,17 @@ console.log(idMatchingServings);
 
 //5. Create a function that will return only dishes whose serving count is even.
 //Filter
+function getEvenServings(dishes) {
+    if (dishes.servings % 2 === 0) {
+        return true;
+    }   else {
+        return false;
+    }
+}
+
+let evenServings = dishes.filter(getEvenServings);
+
+console.log(evenServings)
 
 
 
